@@ -7,7 +7,6 @@
 class MagicSquare:
 
     def __init__(self, sides):
-
         self.sideLength = sides
         self.grid = []              #create grid
 
@@ -32,8 +31,6 @@ class MagicSquare:
             i = i + 1
             self.grid[x][y] = i
 
-        # use mod % to ensure that values don't go out of the grid
-
     def display(self):
         for row in self.grid:
             for col in row:
@@ -41,7 +38,6 @@ class MagicSquare:
             print()
 
 def main():
-
     odd = [1, 3, 5, 7, 9, 11, 13]
 
     for i in odd:
@@ -49,5 +45,5 @@ def main():
         square = MagicSquare(i)
         square.display()
         print()
-
+        
 main()
